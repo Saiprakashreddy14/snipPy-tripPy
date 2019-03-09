@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar  9 14:52:06 2019
+
+@author: sai prakash
+"""
+import random
+l=['rock','paper','scissors']
+NoOfGames=int(input("enter the no of Rounds: "))
+Computer=0
+Player=0
+for i in range(NoOfGames):
+    print("\n------------ROUND:",i+1,"--------------")
+    CompGen= random.choice(l)    
+    PlayerChoice=l[int(input("0->rock\n1->paper\n2->scissors\nenter your choice :"))]
+    print("\nyou have chosen:",PlayerChoice)
+    print("computer has chosen:",CompGen)
+    if(CompGen==PlayerChoice):
+        print("---------------->this match is tied")
+       
+    if(CompGen=='rock' and PlayerChoice =='scissors'):
+        print("***YOU ARE DEFEATED IN THIS ROUND***")
+        Computer+=1
+    
+    if(CompGen=='rock' and PlayerChoice =='paper'):
+        print("***YOU ARE WINNER IN THIS ROUND***")
+        Player+=1
+        
+    if(CompGen=='paper' and PlayerChoice =='scissors'):
+        print("***YOU ARE WINNER IN THIS ROUND***")
+        Player+=1
+    
+    if(CompGen=='paper' and PlayerChoice =='rock'):
+        print("***YOU ARE DEFEATED IN THIS ROUND***")
+        Computer+=1
+        
+    if(CompGen=='scissors' and PlayerChoice =='rock'):
+        print("***YOU ARE WINNER IN THIS ROUND***")
+        Player+=1
+    
+    if(CompGen=='scissors' and PlayerChoice =='paper'):
+        print("***YOU ARE DEFEATED IN THIS ROUND***")
+        Computer+=1
+    print("-----SCORES-------")
+    print("Computer : ",Computer)
+    print("player's : ",Player)
+    input("press enter to continue")
+print("\n\n")
+if(Computer>Player):
+    print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*COMPUTER HAS WON-*-*-*-*-*-*-*")
+elif(Computer==Player):
+    print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*match tied-*-*-*-*-*-*-*")
+else:
+    print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*PLAYER HAS WON-*-*-*-*-*-*-*")
+ 
