@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 11 20:01:40 2019
+
+requires to ----------------->pip install pyqrcode
+
+@author: sai prakash
+"""
+import qrcode
+img = qrcode.make(input("enter the code to be encrypted into qrcode : "))
+display(img)
