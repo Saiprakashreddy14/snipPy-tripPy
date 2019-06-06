@@ -1,10 +1,7 @@
 # python
-this is a repositry where i upload my simple python solutions
-
-all files are  based on python 3.6
-
+This is a repositry where i upload my simple python solutions
+All files are  based on python 3.6
 ### Contents
-
   1.Roman to Numeric Converter:
   
     Converts the roman to numeric and vice-versa
