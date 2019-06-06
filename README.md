@@ -1,4 +1,4 @@
-# python
+# Python
 This is a repositry where i upload my simple python solutions
 All files are  based on python 3.6
 ### Contents
